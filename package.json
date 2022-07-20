@@ -1,14 +1,22 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Note_taker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "ranjani",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sivaparam/note_taker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sivaparam/note_taker/issues"
+  },
+  "homepage": "https://github.com/Sivaparam/note_taker#readme"
 }
