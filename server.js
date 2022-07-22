@@ -5,7 +5,6 @@ const fs = require('fs');
 const uuid = require('./helpers/uuid');
 const { json } = require('express');
 
-
 //set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
