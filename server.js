@@ -1,3 +1,4 @@
+// required packages
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -10,6 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+//port assignments
 const PORT = process.env.PORT || 3001;
 
 //Route for notes.html file
@@ -22,7 +24,7 @@ app.get('/api/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './db/db.json'))
 });
 
-//route to add new notes entered to db.json file and display on screen
+//route to add new notes entered to db.json file and display on screen. Assigns unique id to each of note entered
 app.post('/api/notes', (req, res) => {
     var savedNotes = [];
     var content = fs.readFileSync('./db/db.json', 'utf8', (err, data) => { });
@@ -43,10 +45,7 @@ app.post('/api/notes', (req, res) => {
 
 app.delete('/api/notes/:id', (req, res) => {
 
-
     var savedNotes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8', (err, data) => { }));
- 
-
     savedNotes = savedNotes.filter(x => x.id != req.params.id);
 
     fs.writeFileSync('./db/db.json', JSON.stringify(savedNotes, '\t'), err => {
@@ -54,10 +53,9 @@ app.delete('/api/notes/:id', (req, res) => {
     });
 
   res.send(savedNotes);
-
 });
 
-
+//listen for connections 
 app.listen(PORT, () =>
     console.log(`App listening on server ${PORT}`)
 );

@@ -9,7 +9,7 @@
 
 -[Acceptance Criteria](#acceptance-criteria)
 
--[How to](#how-to)
+-[Installation Steps](#installation-steps)
 
 -[Mock-up Screen](#mock-up-screen)
 
@@ -32,6 +32,7 @@ WHEN user clicks on the Write icon in the navigation at the top of the page, THE
 ## Mock-up screen
 
 ![alt text](./public/assets/images/image1.png)
+
 ![alt text](./public/assets/images/image2.png)
 
 ### Github URL: 
