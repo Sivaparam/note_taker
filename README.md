@@ -39,9 +39,8 @@ WHEN user clicks on the Write icon in the navigation at the top of the page, THE
 https://github.com/Sivaparam/note_taker
 
 ### Live URL: 
-https://sivaparam.github.io/note_taker/
 
 https://note-taker-jul-22.herokuapp.com/notes
 
-### Demo of Application
+
 
